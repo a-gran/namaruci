@@ -2,25 +2,34 @@ stages:
     # - build
     - deploy
 
-# build:
-#     stage: build
-#     rules:
-#         - if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
-#     image: node:18.15.0
-#     script:
-#         - npm i
-#         - npm run build
-#     tags:
-#         - deploy
+cache:
+  paths:
+    - node_modules/
+    - .yarn
 
-deploy:
-    environment: $CI_COMMIT_BRANCH
-    stage: deploy
+build:
+    stage: build
     rules:
-        -   if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
+        - if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
+    image: node:18.15.0
+    script:
+        - yarn config set cache-folder .yarn
+        - yarn install --pure-lockfile --cache-folder .yarn
+        - yarn build
+    artifacts:
+        paths:
+        - ./build
     tags:
         - deploy
-    before_script:
-        - pwd
-    script:
-        - pwd
+
+# deploy:
+#     environment: $CI_COMMIT_BRANCH
+#     stage: deploy
+#     rules:
+#         -   if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
+#     tags:
+#         - deploy
+#     before_script:
+#         - pwd
+#     script:
+#         - pwd
