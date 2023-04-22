@@ -1,17 +1,17 @@
 stages:
-    - build
+#    - build
     - deploy
 
-build_node:
-    stage: build
-    rules:
-        - if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
-    image: node:18.15.0
-    script:
-        - npm i
-        - npm run build
-    tags:
-        - deploy
+#build_node:
+#    stage: build
+#    rules:
+#        - if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
+#    image: node:18.15.0
+#    script:
+#        - npm i
+#        - npm run build
+#    tags:
+#        - deploy
 
 deploy:
     image: ubuntu:latest
@@ -26,6 +26,6 @@ deploy:
         - apt-get -yqq install ssh
         - install -m 600 -D /dev/null ~/.ssh/id_rsa
         - echo "$SSH_PRIVATE_KEY" | base64 -d > ~/.ssh/id_rsa
-        - ssh-keyscan -H $HOST > ~/.ssh/known_hosts
+        - ssh-keyscan -H $HOST >> ~/.ssh/known_hosts
     script:
         - ssh $SSH_USER@$HOST "cd $PROJECT_PATH && git checkout $CI_COMMIT_BRANCH && git pull && exit"
