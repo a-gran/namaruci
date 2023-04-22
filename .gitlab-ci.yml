@@ -1,8 +1,9 @@
 stages:
     - build
+    - test
     - deploy
 
-build_node:
+build:
     stage: build
     rules:
         - if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
@@ -10,6 +11,16 @@ build_node:
     script:
         - npm i
         - npm run build
+    tags:
+        - deploy
+
+test:
+    stage: test
+    rules:
+        - if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
+    image: node:18.15.0
+    script:
+        - npm run test
     tags:
         - deploy
 
