@@ -6,7 +6,7 @@ build_node:
     stage: build
     rules:
         - if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
-    image: node:18.15.0-slim
+    image: node:18.15.0
     script:
         - npm i
         - npm run build
@@ -14,14 +14,18 @@ build_node:
         - deploy
 
 deploy:
-    image: alpine:latest
+    image: ubuntu:latest
     environment: $CI_COMMIT_BRANCH
     stage: deploy
     rules:
         -   if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
     tags:
         - deploy
+    before_script:
+        - apt-get -yq update
+        - apt-get -yqq install ssh
+        - install -m 600 -D /dev/null ~/.ssh/id_rsa
+        - echo "$SSH_PRIVATE_KEY" | base64 -d > ~/.ssh/id_rsa
+        - ssh-keyscan -H $SSH_HOST > ~/.ssh/known_hosts
     script:
-        - chmod og= $SSH_KEY
-        - apk update && apk add openssh-client
-        - ssh -i $SSH_KEY -o StrictHostKeyChecking=no $SSH_USER@$HOST "cd $PROJECT_PATH && git pull && exit"
+        - ssh $SSH_USER@$HOST "cd $PROJECT_PATH && git checkout $CI_COMMIT_BRANCH && git pull && exit"
