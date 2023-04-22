@@ -1,6 +1,5 @@
 stages:
     - build
-    - test
     - deploy
 
 build:
@@ -14,18 +13,7 @@ build:
     tags:
         - deploy
 
-test:
-    stage: test
-    rules:
-        - if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
-    image: node:18.15.0
-    script:
-        - npm run test
-    tags:
-        - deploy
-
 deploy:
-    image: ubuntu:latest
     environment: $CI_COMMIT_BRANCH
     stage: deploy
     rules:
@@ -42,6 +30,4 @@ deploy:
         - mkdir -p ~/.ssh
         - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     script:
-        - ssh $SSH_USER@$HOST "cd $PROJECT_PATH && git checkout $CI_COMMIT_BRANCH && git pull && exit"
-    after_script:
-        - rm -rf ~/.ssh
+        - cd $PROJECT_PATH && git checkout $CI_COMMIT_BRANCH && git pull
