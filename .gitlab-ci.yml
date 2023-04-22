@@ -22,10 +22,13 @@ deploy:
     tags:
         - deploy
     before_script:
-        - apt-get -yq update
-        - apt-get -yqq install ssh
-        - install -m 600 -D /dev/null ~/.ssh/id_rsa
-        - echo "$SSH_PRIVATE_KEY" | base64 -d > ~/.ssh/id_rsa
-        - ssh-keyscan -H $HOST >> ~/.ssh/known_hosts
+        - apt-get update -qq
+        - apt-get install -qq git
+        # Setup SSH deploy keys
+        - 'which ssh-agent || ( apt-get install -qq openssh-client )'
+        - eval $(ssh-agent -s)
+        - ssh-add <(echo "SSH_KEY")
+        - mkdir -p ~/.ssh
+        - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     script:
-        - ssh $SSH_USER@$HOST "cd $PROJECT_PATH && git checkout $CI_COMMIT_BRANCH && git pull && exit"
+        - ssh $SSH_USER@$HOST "cd $PROJECT_PATH && git checkout $CI_COMMIT_BRANCH && git pull origin $CI_COMMIT_BRANCH && exit"
