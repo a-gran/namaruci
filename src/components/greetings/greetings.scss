@@ -1,0 +1,70 @@
+.foto-prabhupada__link {
+    display: block;
+    height: 690px;
+    position: relative;
+    text-decoration: none;
+}
+
+.foto-prabhupada__img {
+    height: 100%;
+    position: relative;
+    right: 216px;
+}
+
+.harekrishna,
+.great-song,
+.freedom {
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.harekrishna {
+    color: #3B3B3B;
+    font-size: 60px;
+    top: 100px;
+    left: 400px;
+}
+
+.great-song,
+.freedom {
+    background: linear-gradient(90deg, #E122F9 10%, #6F2FF5 40%, #2B1EDD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    color: #434343;
+    font-weight: 700;
+}
+
+.great-song {
+    font-size: 76px;
+    top: 200px;
+    left: 500px;
+}
+
+.freedom {
+    font-size: 48px;
+}
+
+.foto-prabhupada__desk {
+    display: flex;
+    flex-direction: column;
+    color: #3B3B3B;
+    max-width: 600px;
+    font-size: 24px;
+    position: absolute;
+}
+
+.foto-prabhupada__desk-header {
+    font-weight: bold;
+}
+
+.about-author {
+    color: #3B3B3B;
+    display: flex;
+    position: absolute;
+}
+
+.about-author__header {
+    padding-right: 12px;
+    font-size: 16px;
+}
