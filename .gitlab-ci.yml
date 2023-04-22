@@ -1,13 +1,27 @@
 stages:
     - build
+    - deploy
 
 build_node:
     stage: build
     rules:
         - if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
-    image: node:18.15.0
+    image: node:18.15.0-slim
     script:
         - npm i
         - npm run build
     tags:
         - deploy
+
+deploy:
+    image: alpine:latest
+    environment: $CI_COMMIT_BRANCH
+    stage: deploy
+    rules:
+        -   if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
+    tags:
+        - deploy
+    script:
+        - chmod og= $SSH_KEY
+        - apk update && apk add openssh-client
+        - ssh -i $SSH_KEY -o StrictHostKeyChecking=no $SSH_USER@$HOST "cd $PROJECT_PATH && git pull && exit"
