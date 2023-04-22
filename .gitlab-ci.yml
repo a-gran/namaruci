@@ -22,7 +22,8 @@ deploy:
     tags:
         - deploy
     before_script:
-        - echo "end before script"
-        - echo "$$CI_COMMIT_BRANCH"
+        - echo "end before script"git
+        - echo "$CI_COMMIT_BRANCH"
+        - echo "$HOST"
     script:
         - echo "end script"
