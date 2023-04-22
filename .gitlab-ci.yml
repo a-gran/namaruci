@@ -18,7 +18,7 @@ build:
         - yarn build
     artifacts:
         paths:
-            - ./build
+            - ./dist
     tags:
         - deploy
 
