@@ -40,6 +40,6 @@ deploy:
         - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     script:
         - ssh $SSH_USER@$HOST "cd $PROJECT_PATH && git checkout $CI_COMMIT_BRANCH && git pull"
-        - ssh $SSH_USER@$HOST "docker run -ti --rm -u 1000:1001 -v $PROJECT_PATH:/var/www -w /var/www node:18.15.0-slim yarn install"
-        - ssh $SSH_USER@$HOST "docker run -ti --rm -u 1000:1001 -v $PROJECT_PATH:/var/www -w /var/www node:18.15.0-slim yarn run build"
+        - ssh $SSH_USER@$HOST "docker run -i --rm -u 1000:1001 -v $PROJECT_PATH:/var/www -w /var/www node:18.15.0-slim yarn install"
+        - ssh $SSH_USER@$HOST "docker run -i --rm -u 1000:1001 -v $PROJECT_PATH:/var/www -w /var/www node:18.15.0-slim yarn run build"
 
