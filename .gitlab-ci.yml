@@ -1,27 +1,27 @@
 stages:
-    - build
+    # - build
     - deploy
 
-cache:
-  paths:
-    - node_modules/
-    - .yarn
+# cache:
+#   paths:
+#     - node_modules/
+#     - .yarn
 
-build:
-    stage: build
-    rules:
-        - if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
-    image: node:18.15.0
-    before_script:
-    script:
-        - yarn config set cache-folder .yarn
-        - yarn install --pure-lockfile --cache-folder .yarn
-        - yarn build
-    artifacts:
-        paths:
-            - ./dist
-    tags:
-        - deploy
+# build:
+#     stage: build
+#     rules:
+#         - if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
+#     image: node:18.15.0
+#     before_script:
+#     script:
+#         - yarn config set cache-folder .yarn
+#         - yarn install --pure-lockfile --cache-folder .yarn
+#         - yarn build
+#     artifacts:
+#         paths:
+#             - ./dist
+#     tags:
+#         - deploy
 
 deploy:
     image: ubuntu:latest
@@ -40,3 +40,6 @@ deploy:
         - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     script:
         - ssh $SSH_USER@$HOST "cd $PROJECT_PATH && git checkout $CI_COMMIT_BRANCH && git pull"
+        - ssh $SSH_USER@$HOST "docker run -ti --rm -u 1000:1001 -v $PROJECT_PATH:/var/www -w /var/www node:18.15.0-slim yarn install"
+        - ssh $SSH_USER@$HOST "docker run -ti --rm -u 1000:1001 -v $PROJECT_PATH:/var/www -w /var/www node:18.15.0-slim yarn run build"
+
