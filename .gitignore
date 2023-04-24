@@ -9,6 +9,7 @@ lerna-debug.log*
 yarn.lock
 
 node_modules
+dist
 *.local
 
 # Editor directories and files
