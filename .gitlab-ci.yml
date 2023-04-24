@@ -1,0 +1,13 @@
+stages:
+    - build
+
+build_node:
+    stage: build
+    rules:
+        - if: '$CI_COMMIT_BRANCH =~ /^(production|test)$/'
+    image: node:18.15.0
+    script:
+        - npm i
+        - npm run build
+    tags:
+        - deploy
