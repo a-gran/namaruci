@@ -17,7 +17,7 @@ const Greetings = () => {
                 <img className='about-author__arrow' src="img/arrow-right.png" alt="arrow" />
             </div>
         </div>
-    );
-};
+    )
+}
 
 export default Greetings

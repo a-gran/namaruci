@@ -8,6 +8,6 @@ const Cart = () => {
                 <img src="img/cart.png" alt="cart"/>
             </a>
         </div>
-    );
-};
+    )
+}
 export default Cart;
