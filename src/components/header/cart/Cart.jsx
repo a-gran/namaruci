@@ -4,7 +4,7 @@ import './cart.scss'
 const Cart = () => {
     return (
         <div className='header-cart'>
-            <a href="/">
+            <a href="/src/components/pagesnents/pages">
                 <img src="img/cart.png" alt="cart"/>
             </a>
         </div>
