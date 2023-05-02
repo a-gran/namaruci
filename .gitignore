@@ -12,6 +12,7 @@ dist
 node_modules
 dist
 *.local
+.yarn/cache
 
 # Editor directories and files
 .vscode/*
@@ -22,5 +23,3 @@ dist
 *.njsproj
 *.sln
 *.sw?
-.yarn
-.yarnrc.yml
