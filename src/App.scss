@@ -1,4 +1,11 @@
 #root {
+	font-family: 'Museo Sans Cyrl';
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	font-style: normal;
+	src: url(./fonts/museosanscyrl-500.ttf);
 }

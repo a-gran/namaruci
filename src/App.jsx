@@ -1,7 +1,7 @@
 import './App.scss'
 import Greetings from './pages/main/greetings/Greetings'
 import Header from './components/header/Header'
-import Mission from './pages/main/mission/Mission';
+import Mission from './pages/main/mission/Mission'
 
 function App() {
     return (
