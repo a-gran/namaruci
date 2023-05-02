@@ -12,6 +12,7 @@ dist
 node_modules
 dist
 *.local
+.yarn/cache
 
 # Editor directories and files
 .vscode/*
