@@ -1,10 +1,45 @@
 :root {
-	line-height: 1.5;
-	font-weight: 400;
+    font-family: 'MuseoNormal';
+    line-height: 1.5;
+    font-weight: 400;
 
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+html {
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'MuseoNormal';
+    src: url(./fonts/museosanscyrl-500.ttf);
+}
+
+@font-face {
+    font-family: 'MuseoBold';
+    src: url(./fonts/museosanscyrl-700.ttf);
+}
+
+@font-face {
+    font-family: 'MuseoBolder';
+    src: url(./fonts/museosanscyrl-900.ttf);
+}
+
+@font-face {
+    font-family: 'MuseoItalicNormal';
+    src: url(./fonts/museosanscyrl-500italic.ttf);
+}
+
+@font-face {
+    font-family: 'MuseoItalicBold';
+    src: url(./fonts/museosanscyrl-700italic.ttf);
+}
+
+@font-face {
+    font-family: 'MuseoItalicBolder';
+    src: url(./fonts/museosanscyrl-900italic.ttf);
 }
