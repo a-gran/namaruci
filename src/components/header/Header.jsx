@@ -5,7 +5,7 @@ import Cart from './cart/Cart.jsx'
 
 const Header = () => {
     return (
-        <div className='header'>
+        <div className='container header'>
             <Logo />
             <Cart />
         </div>

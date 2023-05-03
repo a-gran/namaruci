@@ -1,3 +1,8 @@
+.mission__bg {
+    background-color: #F8F8F8;
+    width: 100%;
+}
+
 .mission {
     display: flex;
     align-items: center;
@@ -21,7 +26,7 @@
     width: 12rem;
     font-family: 'MuseoItalicNormal';
     text-align: right;
-    margin-left: 80%;
+    margin-left: auto;
 }
 
 .mission__img {

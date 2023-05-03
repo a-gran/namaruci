@@ -3,7 +3,7 @@ import './greetings.scss'
 
 const Greetings = () => {
     return (
-        <div className='foto-prabhupada'>
+        <div className='container foto-prabhupada'>
             <img
                 className='foto-prabhupada__img'
                 src='img/prabhupada.png'
