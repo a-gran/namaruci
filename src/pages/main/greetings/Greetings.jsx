@@ -12,9 +12,6 @@ const Greetings = () => {
             <h1 className='harekrishna'>Харе Кришна!</h1>
             <span className='great-song'>Великая песнь</span>
             <span className='freedom'>освобождения!</span>
-
-
-
             <p className='foto-prabhupada__desk'>
                 <span className='foto-prabhupada__desk-header'>
                     Духовный учитель всего мира
