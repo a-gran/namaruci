@@ -5,7 +5,7 @@ const SnippetSlider = () => {
     return (
         <div className='container snippet'>
             <div className="snippet__poem">
-                <div className="snippet__header">Шримад - Бхагаватам</div>
+                <h2 className="snippet__header">Шримад - Бхагаватам</h2>
                 <div className="snippet__link-poem">Песень 2, глава 2, 2.2.37</div>
                 <div className="snippet__desc">
                     Те, кто упивается нектарным посланием Господа Кришны, возлюбленного преданных, освобождаются от порочных представлений о том, что целью жизни являются материальные наслаждения, и возвращаются обратно к Богу, к Его [Верховного Господа] лотосным стопам.
