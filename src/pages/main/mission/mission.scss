@@ -1,6 +1,7 @@
 .mission__bg {
     background-color: #F8F8F8;
     width: 100%;
+    margin-bottom: 5.5rem;
 }
 
 .mission {
@@ -9,8 +10,8 @@
 }
 
 .mission__text {
-    font-size: 1.5rem;
-    padding-right: 5rem;
+    font-size: 1.2rem;
+    padding-right: 4rem;
 }
 
 .mission-text__desc {
@@ -39,7 +40,7 @@
     background-color: #3B3B3B;
     color: #fff;
     font-family: 'MuseoBolder';
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     display: flex;
     flex-wrap: nowrap;

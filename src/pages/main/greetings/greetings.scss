@@ -11,20 +11,25 @@
     right: 216px;
 }
 
+.greeting {
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    line-height: 1;
+}
+
 .harekrishna,
 .great-song,
 .freedom {
     text-transform: uppercase;
-    position: absolute;
     font-family: 'MuseoBolder';
-
 }
 
 .harekrishna {
-    color: #3b3b3b;
-    font-size: 60px;
-    top: 30px;
-    left: 400px;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    right: 120px;
 }
 
 .great-song,
@@ -32,47 +37,44 @@
     background: linear-gradient(90deg, #e122f9 10%, #6f2ff5 40%, #2b1edd 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: table;
     color: #434343;
-    font-weight: 700;
 }
 
 .great-song {
-    font-size: 76px;
-    top: 200px;
-    left: 500px;
+    font-size: 3.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .freedom {
-    font-size: 48px;
-    top: 300px;
-    left: 450px;
+    font-size: 2.4rem;
+    position: relative;
+    right: 60px;
 }
 
-.foto-prabhupada__desk {
-    display: flex;
-    flex-direction: column;
-    color: #3b3b3b;
+.foto-prabhupada__desc {
     max-width: 600px;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 400px;
-    left: 540px;
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    line-height: 1.5;
+    width: 100%;
 }
 
-.foto-prabhupada__desk-header {
+.foto-prabhupada__desc-header {
     font-family: 'MuseoBolder';
 }
 
 .about-author {
-    color: #3b3b3b;
     display: flex;
-    position: absolute;
-    top: 600px;
-    left: 1050px;
+    justify-content: end;
+    color: inherit;
+    font-size: 0.75rem;
+    text-decoration: none;
+    margin-top: 3rem;
+    position: relative;
+    left: 5rem;
+
 }
 
 .about-author__header {
     padding-right: 12px;
-    font-size: 16px;
 }

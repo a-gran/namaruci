@@ -1,0 +1,70 @@
+.snippet {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+}
+
+.snippet__poem,
+.snippet__sanskrit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.snippet__header {
+    color: #2B1EDD;
+    font-size: 2.5rem;
+    font-family: 'MuseoBolder';
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+
+.snippet__link-poem,
+.sanskrit__word-translation-header,
+.sanskrit__word-translation {
+    font-family: 'MuseoItalicNormal';
+    color: #828080;
+    font-size: 0.75rem;
+}
+
+.snippet__link-poem {
+    margin: 0.75rem 0 1.25rem 0;
+}
+
+.snippet__desc {
+    font-size: 1.2rem;
+}
+
+.sanskrit__text {
+    font-family: 'MuseoItalicNormal';
+    font-size: 1.25rem;
+}
+
+.sanskrit__word-translation {
+    padding-left: 2.4rem;
+    border-left: solid 2px #E122F9;
+}
+
+.sanskrit__links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+}
+
+.sanskrit__link-good,
+.sanskrit__link-next {
+    text-decoration: none;
+}
+
+.sanskrit__link-good {
+    color: #5C90DE;
+}
+
+.sanskrit__link-next {
+    display: flex;
+    color: inherit;
+}
+
+.sanskrit__link-next-header {
+    padding-right: 0.6rem;
+}

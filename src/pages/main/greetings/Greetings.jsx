@@ -9,25 +9,27 @@ const Greetings = () => {
                 src='img/prabhupada.png'
                 alt='Prabhupada'
             />
-            <h1 className='harekrishna'>Харе Кришна!</h1>
-            <span className='great-song'>Великая песнь</span>
-            <span className='freedom'>освобождения!</span>
-            <p className='foto-prabhupada__desk'>
-                <span className='foto-prabhupada__desk-header'>
-                    Духовный учитель всего мира
-                </span>
-                <span>
-                    Его Божественная Милость Абхай Чаранаравинда Бхактиведанта
-                    Свами Шрила Прабхупадa
-                </span>
-            </p>
-            <div className='about-author'>
-                <span className='about-author__header'>Об авторе</span>
-                <img
-                    className='about-author__arrow'
-                    src='img/arrow-right.png'
-                    alt='arrow'
-                />
+            <div className="greeting">
+                <h1 className='harekrishna'>Харе Кришна!</h1>
+                <div className='great-song'>Великая песнь</div>
+                <div className='freedom'>освобождения!</div>
+                <div className='foto-prabhupada__desc'>
+                    <div className='foto-prabhupada__desc-header'>
+                        Духовный учитель всего мира
+                    </div>
+                    <div>
+                        Его Божественная Милость Абхай Чаранаравинда Бхактиведанта
+                        Свами Шрила Прабхупадa
+                    </div>
+                    <a href='#' className='about-author'>
+                        <span className='about-author__header'>Об авторе</span>
+                        <img
+                            className='arrow-right'
+                            src='img/arrow-right.png'
+                            alt='arrow'
+                        />
+                    </a>
+                </div>
             </div>
         </div>
     )
