@@ -28,7 +28,6 @@ const BookSlider = () => {
             </div>
 
             <div className="slider__bottom">
-
                 <div className="slider__bottom-dots">
                     <div className="slider__dots">
                         <div className="dot"></div>
@@ -38,14 +37,9 @@ const BookSlider = () => {
                         <div className="dot"></div>
                         <div className="dot"></div>
                     </div>
-
                     <div className="slider__signature">А. Ч. Бхактиведанта Свами Прабхупада</div>
-
                 </div>
             </div>
-
-
-
         </div>
     )
 }
