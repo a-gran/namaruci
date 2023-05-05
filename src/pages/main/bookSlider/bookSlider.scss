@@ -1,5 +1,11 @@
 .book-slider {
     display: flex;
+    flex-direction: column;
+}
+
+.slider__top {
+    display: flex;
+    margin-bottom: 3rem;
 }
 
 .book-slider__wrap {
@@ -57,4 +63,38 @@
     padding-left: 1.2rem;
     font-family: 'MuseoBold';
     font-size: 1.8rem;
+}
+
+.slider__bottom {
+    margin-bottom: 6.5rem;
+}
+
+.slider__bottom-dots {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.book__announcement {
+    margin-bottom: 3rem;
+}
+
+.slider__dots {
+    display: flex;
+}
+
+.dot {
+    background-color: #828080;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+
+.dot:not(:last-child) {
+    margin-right: 0.4rem;
+}
+
+.slider__signature {
+    font-size: 0.75rem;
+    font-family: 'MuseoItalicNormal';
 }
