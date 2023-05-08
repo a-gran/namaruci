@@ -1,0 +1,41 @@
+.lectures__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 660px;
+    width: 840px;
+    background-color: #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.lectures__block {
+    width: 85%;
+    height: 85%;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lectures__block-item {
+    font-size: 2rem;
+}
+
+.set__btn-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.set__btn-link {
+    line-height: 1.2;
+    font-size: 0.6rem;
+    font-family: 'MuseoBold';
+    padding: 0.75rem 2rem;
+    color: #2C2C2C;
+    background-color: #EBEBEB;
+    margin-left: auto;
+    margin-right: auto;
+}
