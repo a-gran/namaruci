@@ -1,6 +1,8 @@
 .book-sets {
     display: flex;
     flex-direction: column;
+    margin-bottom: 7rem;
+    max-width: 1920px;
 }
 
 .book-sets__item {
