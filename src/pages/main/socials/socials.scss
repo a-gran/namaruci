@@ -1,0 +1,33 @@
+.socials__header {
+    color: #2B1EDD;
+    font-size: 2rem;
+    font-family: 'MuseoBolder';
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.socials__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 660px;
+    width: 840px;
+    background-color: #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.socials__block {
+    width: 85%;
+    height: 85%;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials__block-item {
+    font-size: 2rem;
+}

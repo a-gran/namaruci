@@ -11,8 +11,8 @@ const Lectures = () => {
                     </span>
                 </div>
             </div>
-            <div className="set__btn-block">
-                <div className="set__btn-link">Перейти в лекторий</div>
+            <div className="lectures__btn-block">
+                <a href="#" className="lectures__btn-link">Перейти в лекторий</a>
             </div>
         </div>
 

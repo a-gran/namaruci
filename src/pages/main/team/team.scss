@@ -1,0 +1,37 @@
+.team__header {
+    color: #2B1EDD;
+    font-size: 2rem;
+    font-family: 'MuseoBolder';
+    text-transform: uppercase;
+    margin-top: 8rem;
+    margin-bottom: 1.2rem;
+}
+
+.team__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.5rem;
+    margin-bottom: 3.25rem;
+}
+
+.team__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.team__desc-header {
+    margin: 1.2rem 0;
+    font-family: 'MuseoBolder';
+}
+
+.send-btn {
+    line-height: 1.2;
+    font-size: 0.75rem;
+    font-family: 'MuseoBold';
+    padding: 0.75rem;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
+}

@@ -1,0 +1,142 @@
+.blog__header {
+    color: #2B1EDD;
+    font-size: 2rem;
+    font-family: 'MuseoBolder';
+    text-transform: uppercase;
+    margin-top: 8rem;
+    margin-bottom: 1.2rem;
+}
+
+.blog__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #fff;
+    column-gap: 2.5rem;
+    margin-bottom: 3.25rem;
+}
+
+.blog__card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E8E8E8;
+    box-shadow: 5px 5px 5px 2px #E8E8E8;
+    border-radius: 5px;
+}
+
+.blog__desc {
+    padding: 1.8rem 1.2rem 1.2rem;
+}
+
+.blog__desc-header {
+    margin-bottom: 1rem;
+}
+
+.blog__grade {
+    display: flex;
+    font-size: 0.6rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grade__views-likes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.grade__comments,
+.grade__views-likes {
+    width: 50%;
+}
+
+.grade__views {
+    padding-right: 1.5rem;
+}
+
+.grade__likes {
+    position: relative;
+    bottom: 5px;
+}
+
+.grade__comments::before,
+.grade__views::before,
+.grade__likes::before {
+    margin-right: 10px;
+    position: relative;
+}
+
+.grade__comments::before {
+    content: url('../../../public/img/blog/icons/comment.png');
+    top: 5px;
+}
+
+.grade__views::before {
+    content: url('../../../public/img/blog/icons/views.png');
+    top: 3px;
+}
+
+.grade__likes::before {
+    content: url('../../../public/img/blog/icons/like.png');
+    top: 7px;
+}
+
+.blog__pagination {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    max-width: 360px;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    justify-items: center;
+    margin-bottom: 3rem;
+}
+
+.blog__pages {
+    display: flex;
+}
+
+.blog__page {
+    width: 30px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog__arrow:hover {
+    cursor: pointer;
+}
+
+.blog__page:not(:last-child) {
+    margin-right: 2px;
+}
+
+.blog__page:hover {
+    border: 1px solid #E2E2E2;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.page--focus {
+    background-color: #4034E0;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.blog__btn-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.blog__btn-link {
+    line-height: 1.2;
+    font-size: 0.6rem;
+    font-family: 'MuseoBold';
+    padding: 0.75rem 2rem;
+    color: #2C2C2C;
+    background-color: #EBEBEB;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}

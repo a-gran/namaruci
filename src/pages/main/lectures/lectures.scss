@@ -23,13 +23,13 @@
     font-size: 2rem;
 }
 
-.set__btn-block {
+.lectures__btn-block {
     display: flex;
     align-items: center;
     margin-bottom: 4rem;
 }
 
-.set__btn-link {
+.lectures__btn-link {
     line-height: 1.2;
     font-size: 0.6rem;
     font-family: 'MuseoBold';
@@ -38,4 +38,5 @@
     background-color: #EBEBEB;
     margin-left: auto;
     margin-right: auto;
+    text-decoration: none;
 }
