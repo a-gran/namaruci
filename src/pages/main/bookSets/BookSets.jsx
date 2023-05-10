@@ -9,7 +9,7 @@ const BookSets = () => {
 
                 <div className="set__desc">
                     <h3 className="set__header">Шри Чайтанья<br />Чаритамрита</h3>
-                    <div className="set__snippet">Аспирантура духовной жизни Шри Чайтанья Чаритамрита повествует о жизни Шри Чайтаньи Махапрабху, жившего в Индии около 500 лет назад, религиозного...</div>
+                    <div className="set__snippet">Аспирантура духовной жизни Шри Чайтанья Чаритамрита повествует о жизни Шри Чайтаньи Махапрабху, жившего в Индии около 500 лет назад, религиозного... </div>
                     <div className="set__btn-block">
                         <div className="set__btn-link">Подробнее</div>
                         <div className="set__price">4900 руб!!!</div>
