@@ -1,7 +1,7 @@
 import React from 'react'
-import './greetings.scss'
+import './first-screen.scss'
 
-const Greetings = () => {
+const FirstScreen = () => {
     return (
         <div className='container foto-prabhupada'>
             <img
@@ -9,7 +9,7 @@ const Greetings = () => {
                 src='img/prabhupada.png'
                 alt='Prabhupada'
             />
-            <div className="greeting">
+            <div className="first-screen">
                 <h1 className='harekrishna'>Харе Кришна!</h1>
                 <div className='great-song'>Великая песнь</div>
                 <div className='freedom'>освобождения!</div>
@@ -35,4 +35,4 @@ const Greetings = () => {
     )
 }
 
-export default Greetings
+export default FirstScreen

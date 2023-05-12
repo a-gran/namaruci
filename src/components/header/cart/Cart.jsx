@@ -5,7 +5,7 @@ const Cart = () => {
     return (
         <div className='header-cart'>
             <a href="/src/components/pagesnents/pages">
-                <img src="img/cart.png" alt="cart"/>
+                <img src="img/cart.png" alt="cart" />
             </a>
         </div>
     )

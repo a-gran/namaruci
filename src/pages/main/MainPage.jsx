@@ -1,7 +1,7 @@
 import './main.scss'
 import React from 'react'
 import Header from '../../components/header/Header'
-import Greetings from './greetings/Greetings'
+import FirstScreen from './first-screen/FirstScreen'
 import Mission from './mission/Mission'
 import SnippetSlider from './snippetSlider/SnippetSlider'
 import About from './about/About'
@@ -18,7 +18,7 @@ const MainPage = () => {
     return (
         <div className="main-page">
             <Header />
-            <Greetings />
+            <FirstScreen />
             <Mission />
             <SnippetSlider />
             <About />

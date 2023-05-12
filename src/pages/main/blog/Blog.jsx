@@ -9,7 +9,7 @@ const Blog = () => {
                 <div className="blog__card">
                     <img
                         className="blog__card-img"
-                        src="./img/blog/blog1.png"
+                        src="img/blog1.png"
                         alt="статья" />
                     <div className="blog__desc">
                         <div className="blog__desc-header">
@@ -29,7 +29,7 @@ const Blog = () => {
                 <div className="blog__card">
                     <img
                         className="blog__card-img"
-                        src="./img/blog/blog2.png"
+                        src="img/blog2.png"
                         alt="статья" />
                     <div className="blog__desc">
                         <div className="blog__desc-header">
@@ -49,7 +49,7 @@ const Blog = () => {
                 <div className="blog__card">
                     <img
                         className="blog__card-img"
-                        src="./img/blog/blog3.png"
+                        src="img/blog3.png"
                         alt="статья" />
                     <div className="blog__desc">
                         <div className="blog__desc-header">
@@ -69,7 +69,7 @@ const Blog = () => {
 
             <div className="blog__pagination">
                 <a href="#">
-                    <img className="blog__arrow blog__arrow-left" src="./img/blog/icons/page-arrow-left.png" alt="стрелка влево" />
+                    <img className="blog__arrow blog__arrow-left" src="icons/page-arrow-left.png" alt="стрелка влево" />
                 </a>
 
 
@@ -83,7 +83,7 @@ const Blog = () => {
                     <div className="blog__page">19</div>
                 </div>
 
-                <a href="#"><img className="blog__arrow blog__arrow-right" src="./img/blog/icons/page-arrow-right.png" alt="стрелка влево" /></a>
+                <a href="#"><img className="blog__arrow blog__arrow-right" src="icons/page-arrow-right.png" alt="стрелка влево" /></a>
             </div>
 
             <div className="blog__btn-block">
