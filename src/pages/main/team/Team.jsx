@@ -9,7 +9,7 @@ const Team = () => {
                 <div className="team__card">
                     <img
                         className="team__card-img"
-                        src="../../../public/img/team/bloger.png"
+                        src="./public/img/team/bloger.png"
                         alt="статья" />
                     <div className="team__desc-header">
                         Видеоблогер
@@ -22,7 +22,7 @@ const Team = () => {
                 <div className="team__card">
                     <img
                         className="team__card-img"
-                        src="../../../public/img/team/copywriter.png"
+                        src="./public/img/team/copywriter.png"
                         alt="статья" />
                     <div className="team__desc-header">
                         Копирайтер
@@ -35,7 +35,7 @@ const Team = () => {
                 <div className="team__card">
                     <img
                         className="team__card-img"
-                        src="../../../public/img/team/smm.png"
+                        src="./public/img/team/smm.png"
                         alt="статья" />
                     <div className="team__desc-header">
                         SMM-специалист
