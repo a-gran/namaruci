@@ -9,7 +9,7 @@ const Blog = () => {
                 <div className="blog__card">
                     <img
                         className="blog__card-img"
-                        src="/public/img/blog/blog1.png"
+                        src="/img/blog/blog1.png"
                         alt="статья" />
                     <div className="blog__desc">
                         <div className="blog__desc-header">
@@ -29,7 +29,7 @@ const Blog = () => {
                 <div className="blog__card">
                     <img
                         className="blog__card-img"
-                        src="/public/img/blog/blog2.png"
+                        src="/img/blog/blog2.png"
                         alt="статья" />
                     <div className="blog__desc">
                         <div className="blog__desc-header">
@@ -49,7 +49,7 @@ const Blog = () => {
                 <div className="blog__card">
                     <img
                         className="blog__card-img"
-                        src="/public/img/blog/blog3.png"
+                        src="/img/blog/blog3.png"
                         alt="статья" />
                     <div className="blog__desc">
                         <div className="blog__desc-header">
