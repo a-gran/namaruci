@@ -5,7 +5,7 @@ const BookSets = () => {
     return (
         <div className="book-sets">
             <div className="book-sets__item">
-                <img className="set__foto" src="./public/img/booksSet1.png" alt="Комплект книг" />
+                <img className="set__foto" src="/public/img/booksSet1.png" alt="Комплект книг" />
 
                 <div className="set__desc">
                     <h3 className="set__header">Шри Чайтанья<br />Чаритамрита</h3>
@@ -27,7 +27,7 @@ const BookSets = () => {
                     </div>
                 </div>
 
-                <img className="set__foto" src="./public/img/booksSet2.png" alt="Комплект книг" />
+                <img className="set__foto" src="/public/img/booksSet2.png" alt="Комплект книг" />
             </div>
 
             <div className="all-sets">
