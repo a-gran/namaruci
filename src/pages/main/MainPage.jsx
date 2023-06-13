@@ -19,7 +19,7 @@ const MainPage = () => {
         <div className="main-page">
             <Header />
             <FirstScreen />
-            <Mission />
+            {/*<Mission />
             <SnippetSlider />
             <About />
             <BookSlider />
@@ -29,7 +29,7 @@ const MainPage = () => {
             <Blog />
             <Socials />
             <Team />
-            <Footer />
+            <Footer />*/}
         </div>
     )
 }
