@@ -4,14 +4,14 @@
     grid-column-gap: 6rem;
 }
 
-.snippet__poem,
-.snippet__sanskrit {
+.snippetPoem,
+.snippetSanskrit {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.snippet__header {
+.snippetHeader {
     color: #2B1EDD;
     font-size: 2rem;
     font-family: 'MuseoBolder';
@@ -20,52 +20,52 @@
     line-height: 1.3;
 }
 
-.snippet__link-poem,
-.sanskrit__word-translation-header,
-.sanskrit__word-translation {
+.snippetLinkPoem,
+.sanskritWordTranslationHeader,
+.sanskritWordTranslation {
     font-family: 'MuseoItalicNormal';
     color: #828080;
     font-size: 0.75rem;
 }
 
-.snippet__link-poem {
+.snippetLinkPoem {
     margin: 0.75rem 0 1.25rem 0;
 }
 
-.snippet__desc {
+.snippetDesc {
     font-size: 1.2rem;
 }
 
-.sanskrit__text {
+.sanskritText {
     font-family: 'FreeSansOblique';
     font-size: 1.25rem;
 }
 
-.sanskrit__word-translation {
+.sanskritWordTranslation {
     padding-left: 2.4rem;
     border-left: solid 2px #E122F9;
 }
 
-.sanskrit__links {
+.sanskritLinks {
     display: flex;
     justify-content: space-between;
     font-size: 0.75rem;
 }
 
-.sanskrit__link-good,
-.sanskrit__link-next {
+.sanskritLinkGood,
+.sanskritLinkNext {
     text-decoration: none;
 }
 
-.sanskrit__link-good {
+.sanskritLinkGoodHeader {
     color: #5C90DE;
 }
 
-.sanskrit__link-next {
+.sanskritLinkNextHeader {
     display: flex;
     color: inherit;
 }
 
-.sanskrit__link-next-header {
+.sanskritLinkNextHeader {
     padding-right: 0.6rem;
 }

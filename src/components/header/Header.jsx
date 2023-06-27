@@ -1,11 +1,11 @@
 import React from 'react'
-import './header.scss'
+import css from './Header.module.scss'
 import Logo from './logo/Logo.jsx'
 import Cart from './cart/Cart.jsx'
 
 const Header = () => {
     return (
-        <div className='container header'>
+        <div className={`${css.container} ${css.header}`}>
             <Logo />
             <Cart />
         </div>

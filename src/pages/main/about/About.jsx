@@ -1,11 +1,11 @@
 import React from 'react'
-import './about.scss'
+import css from './About.module.scss'
 
 const About = () => {
     return (
-        <div className="container about-us">
-            <h2 className="about-us__header">Кто мы?</h2>
-            <p className="about-us__desc">
+        <div className={css.container}>
+            <h2 className={css.aboutUsHeader}>Кто мы?</h2>
+            <p className={css.aboutUsDesc}>
                 Идейные соображения высшего порядка, а также высокотехнологичная концепция общественного уклада,
                 в своём классическом представлении, допускает внедрение поставленных обществом задач. Каждый из нас понимает очевидную вещь: понимание сути ресурсосберегающих технологий, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для форм воздействия.
             </p>

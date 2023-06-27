@@ -1,4 +1,4 @@
-import './main.scss'
+import css from './Main.module.scss'
 import React from 'react'
 import Header from '../../components/header/Header'
 import FirstScreen from './first-screen/FirstScreen'
@@ -16,10 +16,10 @@ import Footer from '../../components/footer/Footer'
 
 const MainPage = () => {
     return (
-        <div className="main-page">
+        <div className={css.mainPage}>
             <Header />
             <FirstScreen />
-            {/*<Mission />
+            <Mission />
             <SnippetSlider />
             <About />
             <BookSlider />
@@ -29,7 +29,7 @@ const MainPage = () => {
             <Blog />
             <Socials />
             <Team />
-            <Footer />*/}
+            <Footer />
         </div>
     )
 }

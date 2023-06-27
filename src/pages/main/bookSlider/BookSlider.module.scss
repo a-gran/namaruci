@@ -1,14 +1,14 @@
-.book-slider {
+.bookSlider {
     display: flex;
     flex-direction: column;
 }
 
-.slider__top {
+.bookSliderTop {
     display: flex;
     margin-bottom: 3rem;
 }
 
-.book-slider__wrap {
+.bookSliderWrap {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@
     background-color: #ccc;
 }
 
-.book-slider__block {
+.bookSliderBlock {
     width: 85%;
     height: 85%;
     background-color: #eee;
@@ -26,29 +26,29 @@
     justify-content: center;
 }
 
-.book-slider__block-item {
+.bookSliderBlockItem {
     font-size: 2rem;
 }
 
-.book-slider__book-desc {
+.bookSliderBookDesc {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.book-link__header {
+.bookLinkHeader {
     font-family: 'MuseoBold';
     font-size: 2rem;
     margin: 0;
     line-height: 1.3;
 }
 
-.book-slider__btn-block {
+.bookSliderBtnBlock {
     display: flex;
     align-items: center;
 }
 
-.book-slider__btn {
+.bookSliderBtn {
     line-height: 1.2;
     font-size: 0.6rem;
     font-family: 'MuseoBold';
@@ -58,28 +58,10 @@
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
 }
 
-.book-slider__price {
+.bookSliderPrice {
     padding-left: 1.2rem;
     font-family: 'MuseoBold';
     font-size: 1.8rem;
-}
-
-.slider__bottom {
-    margin-bottom: 6.5rem;
-}
-
-.slider__bottom-dots {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.book__announcement {
-    margin-bottom: 3rem;
-}
-
-.slider__dots {
-    display: flex;
 }
 
 .dot {
@@ -93,7 +75,39 @@
     margin-right: 0.4rem;
 }
 
-.slider__signature {
+.bookSliderDots {
+    display: flex;
+}
+
+.bookSliderBottom {
+    margin-bottom: 6.5rem;
+}
+
+.bookSliderBottomDots {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bookAnnouncement {
+    margin-bottom: 3rem;
+}
+
+.sliderSignature {
     font-size: 0.75rem;
     font-family: 'MuseoItalicNormal';
 }
+
+
+
+// MEDIA QUERIES
+
+
+
+@media (min-width: 376px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 980px) {}
+
+@media (min-width: 981px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}

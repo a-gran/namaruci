@@ -1,4 +1,4 @@
-.lectures__wrap {
+.lectures {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,7 @@
     margin-bottom: 3rem;
 }
 
-.lectures__block {
+.lecturesBlock {
     width: 85%;
     height: 85%;
     background-color: #eee;
@@ -19,17 +19,17 @@
     justify-content: center;
 }
 
-.lectures__block-item {
+.lecturesBlockItem {
     font-size: 2rem;
 }
 
-.lectures__btn-block {
+.lecturesBtnBlock {
     display: flex;
     align-items: center;
     margin-bottom: 4rem;
 }
 
-.lectures__btn-link {
+.lecturesBtnLink {
     line-height: 1.2;
     font-size: 0.6rem;
     font-family: 'MuseoBold';
@@ -40,3 +40,17 @@
     margin-right: auto;
     text-decoration: none;
 }
+
+
+
+// MEDIA QUERIES
+
+
+
+@media (min-width: 376px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 980px) {}
+
+@media (min-width: 981px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}

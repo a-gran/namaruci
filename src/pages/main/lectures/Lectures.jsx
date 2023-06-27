@@ -1,21 +1,20 @@
 import React from 'react'
-import './lectures.scss'
+import css from './Lectures.module.scss'
 
 const Lectures = () => {
     return (
-        <div className="lectures container">
-            <div className="lectures__wrap">
-                <div className="lectures__block">
-                    <span className="lectures__block-item">
+        <div className={css.container}>
+            <div className={css.lectures}>
+                <div className={css.lecturesBlock}>
+                    <span className={css.lecturesBlockItem}>
                         Аудиоплеер
                     </span>
                 </div>
             </div>
-            <div className="lectures__btn-block">
-                <a href="#" className="lectures__btn-link">Перейти в лекторий</a>
+            <div className={css.lecturesBtnBlock}>
+                <a href="#" className={css.lecturesBtnLink}>Перейти в лекторий</a>
             </div>
         </div>
-
     )
 }
 

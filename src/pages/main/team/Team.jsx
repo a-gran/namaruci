@@ -1,52 +1,47 @@
 import React from 'react'
-import './team.scss'
+import css from './Team.module.scss'
 
 const Team = () => {
     return (
-        <div className="container about-us">
-            <h2 className="team__header">Наша команда</h2>
-            <div className="team__cards">
-                <div className="team__card">
+        <div className={css.container}>
+            <h2 className={css.teamHeader}>Наша команда</h2>
+            <div className={css.teamCards}>
+                <div className={css.teamCard}>
                     <img
-                        className="team__card-img"
                         src="img/bloger.png"
                         alt="статья" />
-                    <div className="team__desc-header">
+                    <div className={css.teamDescHeader}>
                         Видеоблогер
                     </div>
-                    <div className="send-btn">
+                    <div className={css.sendBtn}>
                         Отправить заявку
                     </div>
                 </div>
 
-                <div className="team__card">
+                <div className={css.teamCard}>
                     <img
-                        className="team__card-img"
                         src="img/copywriter.png"
                         alt="статья" />
-                    <div className="team__desc-header">
-                        Копирайтер
+                    <div className={css.teamDescHeader}>
+                        Видеоблогер
                     </div>
-                    <div className="send-btn">
+                    <div className={css.sendBtn}>
                         Отправить заявку
                     </div>
                 </div>
 
-                <div className="team__card">
+                <div className={css.teamCard}>
                     <img
-                        className="team__card-img"
                         src="img/smm.png"
                         alt="статья" />
-                    <div className="team__desc-header">
-                        SMM-специалист
+                    <div className={css.teamDescHeader}>
+                        Видеоблогер
                     </div>
-                    <div className="send-btn">
+                    <div className={css.sendBtn}>
                         Отправить заявку
                     </div>
                 </div>
             </div>
-
-
         </div>
     )
 }

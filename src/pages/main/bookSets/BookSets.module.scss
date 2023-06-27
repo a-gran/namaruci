@@ -1,4 +1,4 @@
-.book-sets {
+.bookSets {
     display: flex;
     flex-direction: column;
     margin-bottom: 7rem;
@@ -6,23 +6,23 @@
     background-color: #F8F8F8;
 }
 
-.book-sets__item {
+.bookSetsItem {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.set__foto {
+.setFoto {
     width: 100%;
 }
 
-.set__desc {
+.setDesc {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 3rem 4rem;
 }
 
-.set__header {
+.setHeader {
     font-family: 'MuseoBolder';
     font-size: 2rem;
     margin: 0;
@@ -30,26 +30,16 @@
     text-transform: uppercase;
 }
 
-.set__snippet {
+.setSnippet {
     max-width: 434px;
 }
 
-.set__btn-block {
+.setBtnBlock {
     display: flex;
     align-items: center;
 }
 
-.set__btn-link,
-.all-sets {
-    line-height: 1.2;
-    font-size: 0.6rem;
-    font-family: 'MuseoBold';
-    padding: 0.75rem 2rem;
-    color: #2C2C2C;
-    background-color: #EBEBEB;
-}
-
-.set__price {
+.setPrice {
     padding-left: 2rem;
     font-family: 'MuseoBold';
     font-size: 1.8rem;
@@ -64,7 +54,17 @@
     margin-right: 2rem;
 }
 
-.all-sets {
+.setBtnLink,
+.allSets {
+    line-height: 1.2;
+    font-size: 0.6rem;
+    font-family: 'MuseoBold';
+    padding: 0.75rem 2rem;
+    color: #2C2C2C;
+    background-color: #EBEBEB;
+}
+
+.allSets {
     margin-top: 4rem;
     margin-right: auto;
     margin-left: auto;

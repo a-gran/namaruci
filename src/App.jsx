@@ -1,10 +1,10 @@
 import MainPage from './pages/main/MainPage'
-import './App.scss'
+import css from './App.module.scss'
 
 
 function App() {
     return (
-        <div className="App">
+        <div className={css.container}>
             <MainPage />
         </div>
     )

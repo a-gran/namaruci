@@ -1,13 +1,13 @@
 import React from 'react';
-import './cart.scss'
+import css from './Cart.module.scss'
 
 const Cart = () => {
     return (
-        <div className='header-cart'>
+        <div>
             <a href="/src/components/pagesnents/pages">
                 <img src="img/cart.png" alt="cart" />
             </a>
         </div>
     )
 }
-export default Cart;
+export default Cart

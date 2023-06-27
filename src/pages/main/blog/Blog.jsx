@@ -1,93 +1,100 @@
 import React from 'react'
-import './blog.scss'
+import css from './Blog.module.scss'
 
 const Blog = () => {
     return (
-        <div className="container about-us">
-            <h2 className="blog__header">Наш блог</h2>
-            <div className="blog__cards">
-                <div className="blog__card">
+        <div className={css.container}>
+            <h2 className={css.blogHeader}>Наш блог</h2>
+            <div className={css.blogCards}>
+                <div className={css.blogCard}>
                     <img
-                        className="blog__card-img"
                         src="img/blog1.png"
                         alt="статья" />
-                    <div className="blog__desc">
-                        <div className="blog__desc-header">
+                    <div className={css.blogDesc}>
+                        <div className={css.blogDescHeader}>
                             Флаги, знамена, полезная информация, часть I
                         </div>
-                        <div className="blog__grade">
-                            <span className="grade__comments">21</span>
-                            <div className="grade__views-likes">
-                                <span className="grade__views">2321</span>
-                                <span className="grade__likes">11</span>
+                        <div className={css.blogGrade}>
+                            <span className={css.gradeComments}>21</span>
+                            <div className={css.gradeViewsLikes}>
+                                <span className={css.gradeViews}>2321</span>
+                                <span className={css.gradeLikes}>11</span>
                             </div>
-
                         </div>
                     </div>
                 </div>
 
-                <div className="blog__card">
+                <div className={css.blogCard}>
                     <img
-                        className="blog__card-img"
                         src="img/blog2.png"
                         alt="статья" />
-                    <div className="blog__desc">
-                        <div className="blog__desc-header">
+                    <div className={css.blogDesc}>
+                        <div className={css.blogDescHeader}>
                             Флаги, знамена, полезная информация, часть I
                         </div>
-                        <div className="blog__grade">
-                            <span className="grade__comments">21</span>
-                            <div className="grade__views-likes">
-                                <span className="grade__views">2321</span>
-                                <span className="grade__likes">11</span>
+                        <div className={css.blogGrade}>
+                            <span className={css.gradeComments}>21</span>
+                            <div className={css.gradeViewsLikes}>
+                                <span className={css.gradeViews}>2321</span>
+                                <span className={css.gradeLikes}>11</span>
                             </div>
-
                         </div>
                     </div>
                 </div>
 
-                <div className="blog__card">
+                <div className={css.blogCard}>
                     <img
-                        className="blog__card-img"
                         src="img/blog3.png"
                         alt="статья" />
-                    <div className="blog__desc">
-                        <div className="blog__desc-header">
+                    <div className={css.blogDesc}>
+                        <div className={css.blogDescHeader}>
                             Флаги, знамена, полезная информация, часть I
                         </div>
-                        <div className="blog__grade">
-                            <span className="grade__comments">21</span>
-                            <div className="grade__views-likes">
-                                <span className="grade__views">2321</span>
-                                <span className="grade__likes">11</span>
+                        <div className={css.blogGrade}>
+                            <span className={css.gradeComments}>21</span>
+                            <div className={css.gradeViewsLikes}>
+                                <span className={css.gradeViews}>2321</span>
+                                <span className={css.gradeLikes}>11</span>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="blog__pagination">
+            <div className={css.blogPagination}>
                 <a href="#">
-                    <img className="blog__arrow blog__arrow-left" src="icons/page-arrow-left.png" alt="стрелка влево" />
+                    <img
+                        className={css.blogArrow}
+                        src="icons/page-arrow-left.png"
+                        alt="стрелка влево"
+                    />
                 </a>
 
-
-                <div className="blog__pages">
-                    <div className="blog__page">1</div>
-                    <div className="blog__page">2</div>
-                    <div className="blog__page page--focus">3</div>
-                    <div className="blog__page">4</div>
-                    <div className="blog__page">5</div>
-                    <div className="blog__page">...</div>
-                    <div className="blog__page">19</div>
+                <div className={css.blogPages}>
+                    <div className={css.blogPage}>1</div>
+                    <div className={css.blogPage}>2</div>
+                    <div className={`${css.blogPage} ${css.pageFocus}`}>3</div>
+                    <div className={css.blogPage}>4</div>
+                    <div className={css.blogPage}>5</div>
+                    <div className={css.blogPage}>...</div>
+                    <div className={css.blogPage}>19</div>
                 </div>
 
-                <a href="#"><img className="blog__arrow blog__arrow-right" src="icons/page-arrow-right.png" alt="стрелка влево" /></a>
+                <a href="#">
+                    <img
+                        className={css.blogArrow}
+                        src="icons/page-arrow-right.png"
+                        alt="стрелка влево"
+                    />
+                </a>
             </div>
 
-            <div className="blog__btn-block">
-                <a href="#" className="blog__btn-link">Смотреть все блоги</a>
+            <div className={css.blogBtnBlock}>
+                <a
+                    href="#"
+                    className={css.blogBtnLink}>
+                    Смотреть все блоги
+                </a>
             </div>
         </div>
     )

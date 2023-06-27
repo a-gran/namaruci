@@ -1,16 +1,15 @@
-import React from "react";
-import "./mission.scss"
+import React from 'react'
+import css from './Mission.module.scss'
 
 const Mission = () => {
     return (
-        <div className="mission__bg">
-            <div className="container mission">
-                <div className="mission__text">
-                    <div className="mission-text__desc">
+        <div className={css.missionBg}>
+            <div className={`${css.container} ${css.mission}`}>
+                <div className={css.missionText}>
+                    <div className={css.missionDesc}>
                         Моя миссия заключается в проповеди
-                        философии Господа Чайтаньи, в
-                        повторении:
-                        <span className="mission-text__desc-harekrishna">
+                        философии Господа Чайтаньи, в повторении:
+                        <span className={css.missionTextDesc}>
                             «Харе Кришна Харе Кришна, Кришна Кришна Харе Харе /
                             Харе Рама Харе Рама, Рама Рама Харе Харе»
                         </span> этот трансцендентный
@@ -19,21 +18,20 @@ const Mission = () => {
                         независимо от языка, национальности, вероисповедания и касты,
                         поскольку этот звук исходит из глубины души.
                     </div>
-                    <div className="mission-text__signature">
+                    <div className={css.missionSignature}>
                         Любовь к Богу — высшее благо для всех людей
                     </div>
                 </div>
-                <div className="mission__img">
+                <div className={css.missionImg}>
                     <img src="img/mission.png" alt="mission" />
-                    <div className="mission__png-header">
-                        <div className="mission-png__text">Что<br />не является любовью?</div>
+                    <div className={css.missionImgHeader}>
+                        <div className={css.missionImgText}>Что<br />не является любовью?</div>
                     </div>
                 </div>
             </div>
-        </div>
-
-    );
-};
+        </div >
+    )
+}
 
 export default Mission
 

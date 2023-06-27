@@ -1,0 +1,28 @@
+.aboutUsHeader {
+    color: #2B1EDD;
+    font-size: 2rem;
+    font-family: 'MuseoBolder';
+    text-transform: uppercase;
+    margin-top: 8rem;
+    margin-bottom: 1.2rem;
+}
+
+.aboutUsDesc {
+    font-family: 'MuseoBold';
+    margin-bottom: 5rem;
+}
+
+
+
+
+// MEDIA QUERIES
+
+
+
+@media (min-width: 376px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 980px) {}
+
+@media (min-width: 981px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}

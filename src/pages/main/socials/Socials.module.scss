@@ -1,4 +1,4 @@
-.socials__header {
+.socialHeader {
     color: #2B1EDD;
     font-size: 2rem;
     font-family: 'MuseoBolder';
@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.socials__wrap {
+.socialWrap {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +19,7 @@
     margin-bottom: 3rem;
 }
 
-.socials__block {
+.socialBlock {
     width: 85%;
     height: 85%;
     background-color: #eee;
@@ -28,6 +28,20 @@
     justify-content: center;
 }
 
-.socials__block-item {
+.socialBlockItem {
     font-size: 2rem;
 }
+
+
+
+// MEDIA QUERIES
+
+
+
+@media (min-width: 376px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 980px) {}
+
+@media (min-width: 981px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) {}
