@@ -54,12 +54,19 @@
 }
 
 .textDescWrap {
-	position: absolute;
 	bottom: 0;
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	margin-bottom: 1.4rem;
+	margin-bottom: 1rem;
+}
+
+.firstScreenHeaderWrap {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100vh;
+	z-index: 99;
 }
 
 .textDescCenter {
@@ -81,6 +88,7 @@
 	width: 100%;
 	max-width: 791px;
 	position: absolute;
+	top: 7rem;
 }
 
 .aboutAuthor {
