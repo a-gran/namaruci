@@ -15,23 +15,23 @@ import Team from './team/Team'
 import Footer from '../../components/footer/Footer'
 
 const MainPage = () => {
-    return (
-        <div className={css.mainPage}>
-            <Header />
-            <FirstScreen />
-            <Mission />
-            <SnippetSlider />
-            <About />
-            <BookSlider />
-            <BookSets />
-            <Video />
-            <Lectures />
-            <Blog />
-            <Socials />
-            <Team />
-            <Footer />
-        </div>
-    )
+	return (
+		<div className={css.mainPage}>
+			<Header />
+			<FirstScreen />
+			{/*<Mission />*/}
+			{/*<SnippetSlider />*/}
+			{/*<About />*/}
+			{/*<BookSlider />*/}
+			{/*<BookSets />*/}
+			{/*<Video />*/}
+			{/*<Lectures />*/}
+			{/*<Blog />*/}
+			{/*<Socials />*/}
+			{/*<Team />*/}
+			{/*<Footer />*/}
+		</div>
+	)
 }
 
 export default MainPage

@@ -1,98 +1,105 @@
-.firstScreen {
-    padding: 0.25rem;
+.transition {
+	transition: all 0.5s;
 }
 
 .firstScreen,
 .firstScreenHeader {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
+}
+
+.firstScreen {
+	padding: 1rem;
+	position: relative;
+	justify-content: space-between;
+	min-height: 100vh;
 }
 
 .firstScreenHeader {
-    align-items: center;
-}
-
-.fotoDescWrap {
-    position: relative;
-    text-align: center;
-}
-
-.textDescWrap {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 1.4rem;
-}
-
-.textDescCenter {
-    line-height: 26px;
-    width: 290px;
-}
-
-.descHeader {
-    font-family: 'MuseoBold';
-}
-
-.descHeader,
-.descHeaderText {
-    font-size: 0.9rem;
-    text-align: left;
-}
-
-.fotoDesc {
-    max-width: 360px;
+	align-items: center;
 }
 
 .heading,
 .greatSong,
 .freedom {
-    text-transform: uppercase;
-    font-family: 'MuseoBolder';
+	text-transform: uppercase;
+	font-family: 'MuseoBolder';
 }
 
 .greatSong,
 .freedom {
-    background: linear-gradient(90.21deg,
-            #E122F9 4.11%,
-            #6F2FF5 53.99%,
-            #2B1EDD 99.88%), #434343;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+	background: linear-gradient(90.21deg,
+			#E122F9 4.11%,
+			#6F2FF5 53.99%,
+			#2B1EDD 99.88%), #434343;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 }
 
 .heading {
-    font-size: 1.8rem;
+	font-size: 1.8rem;
 }
 
 .greatSong {
-    font-size: 1.4rem;
+	font-size: 1.4rem;
 }
 
 .freedom {
-    font-size: 1.1rem;
+	font-size: 1.1rem;
+}
+
+.fotoDescWrap {
+	text-align: center;
+}
+
+.textDescWrap {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-bottom: 1.4rem;
+}
+
+.textDescCenter {
+	line-height: 26px;
+	width: 80%;
+}
+
+.descHeader {
+	font-family: 'MuseoBold';
+}
+
+.descHeader,
+.descHeaderText {
+	font-size: 0.9rem;
+	text-align: left;
+}
+
+.fotoDesc {
+	width: 100%;
+	max-width: 791px;
+	position: absolute;
 }
 
 .aboutAuthor {
-    display: flex;
-    justify-content: flex-end;
-    color: inherit;
-    font-size: 0.75rem;
-    text-decoration: none;
+	display: flex;
+	justify-content: flex-end;
+	color: inherit;
+	font-size: 0.75rem;
+	text-decoration: none;
 }
 
 .aboutAuthorHeader {
-    display: flex;
-    align-content: center;
+	display: flex;
+	align-content: center;
 
 }
 
 .aboutAuthorHeader::after {
-    content: url('img/arrow-right.png');
-    padding-left: 12px;
+	content: url('img/arrow-right.png');
+	padding-left: 12px;
 }
 
 
@@ -101,9 +108,38 @@
 
 
 
-@media (min-width: 376px) and (max-width: 767px) {}
+@media (min-width: 376px) and (max-width: 767px) {
+	.heading {
+		font-size: 2.2rem;
+	}
 
-@media (min-width: 768px) and (max-width: 980px) {}
+	.greatSong {
+		font-size: 1.8rem;
+	}
+
+	.freedom {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+	.heading {
+		font-size: 3rem;
+	}
+
+	.greatSong {
+		font-size: 3.8rem;
+	}
+
+	.freedom {
+		font-size: 2.4rem;
+	}
+
+	.descHeader,
+	.descHeaderText {
+		font-size: 1rem;
+	}
+}
 
 @media (min-width: 981px) and (max-width: 1199px) {}
 
