@@ -9,10 +9,9 @@
 }
 
 .firstScreen {
-	padding: 1rem;
+	padding: 0 1rem;
 	position: relative;
 	justify-content: space-between;
-	min-height: 100vh;
 }
 
 .firstScreenHeader {
@@ -65,7 +64,6 @@
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
-	height: 100vh;
 	z-index: 99;
 }
 
@@ -130,7 +128,7 @@
 	}
 }
 
-@media (min-width: 768px) and (max-width: 980px) {
+@media (min-width: 768px) {
 	.heading {
 		font-size: 3rem;
 	}
@@ -149,6 +147,40 @@
 	}
 }
 
-@media (min-width: 981px) and (max-width: 1199px) {}
+@media (min-width: 1199px) {
+	.firstScreen {
+		flex-direction: row;
+		align-items: center;
+	}
 
-@media (min-width: 1200px) {}
+	.fotoDesc {
+		position: relative;
+		height: 100%;
+		width: 791px;
+		top: 0;
+		right: 100px;
+	}
+
+	.freedom {
+		margin-bottom: 3rem;
+	}
+
+	.heading,
+	.greatSong,
+	.freedom {
+		position: relative;
+	}
+
+	.heading {
+		right: 250px;
+	}
+
+	.greatSong {
+		right: 70px;
+		width: 635px;
+	}
+
+	.freedom {
+		right: 230px;
+	}
+}
