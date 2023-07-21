@@ -1,71 +1,172 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 .snippet {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: 6rem;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 2rem 3rem 2rem;
 }
 
 .snippetPoem,
 .snippetSanskrit {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .snippetHeader {
-    color: #2B1EDD;
-    font-size: 2rem;
-    font-family: 'MuseoBolder';
-    text-transform: uppercase;
-    margin: 0;
-    line-height: 1.3;
+	color: #2B1EDD;
+	font-size: 1.8rem;
+	font-family: 'MuseoBolder';
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 46px;
 }
 
 .snippetLinkPoem,
 .sanskritWordTranslationHeader,
 .sanskritWordTranslation {
-    font-family: 'MuseoItalicNormal';
-    color: #828080;
-    font-size: 0.75rem;
+	font-family: 'MuseoItalicNormal';
+	color: #828080;
+	font-size: 0.75rem;
 }
 
 .snippetLinkPoem {
-    margin: 0.75rem 0 1.25rem 0;
+	margin: 0.75rem 0 1.25rem 0;
 }
 
 .snippetDesc {
-    font-size: 1.2rem;
+	font-size: 0.9rem;
+	margin-bottom: 1.8rem;
 }
 
 .sanskritText {
-    font-family: 'FreeSansOblique';
-    font-size: 1.25rem;
+	font-family: 'FreeSansOblique';
+	font-size: 0.75rem;
+	margin-bottom: 1rem;
+	line-height: 26px;
+}
+
+.sanskritWordTranslationHeader {
+	margin-bottom: 1.2rem;
 }
 
 .sanskritWordTranslation {
-    padding-left: 2.4rem;
-    border-left: solid 2px #E122F9;
+	padding-left: 0.9rem;
+	border-left: solid 2px #E122F9;
+	font-size: 0.75rem;
+	margin-bottom: 1rem;
+	line-height: 26px;
 }
 
 .sanskritLinks {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	font-size: 0.75rem;
 }
 
 .sanskritLinkGood,
-.sanskritLinkNext {
-    text-decoration: none;
+.nextLinkGood {
+	text-decoration: none;
+}
+
+.sanskritLinkGood {
+	margin-bottom: 1.5rem;
 }
 
 .sanskritLinkGoodHeader {
-    color: #5C90DE;
+	color: #5C90DE;
 }
 
-.sanskritLinkNextHeader {
-    display: flex;
-    color: inherit;
+.nextLinkGood {
+	background-color: #EBEBEB;
+	color: #2C2C2C;
+	font-family: 'MuseoBold';
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0.5rem;
+	align-items: center;
 }
 
-.sanskritLinkNextHeader {
-    padding-right: 0.6rem;
+.nextLinkGoodHeader {
+	display: flex;
+	color: inherit;
+	padding-right: 0.6rem;
+}
+
+
+
+// MEDIA QUERIES
+
+
+
+@media (min-width: 768px) {
+	.sanskritLinks {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.nextLinkGood,
+	.sanskritLinkGood {
+		width: 50%;
+	}
+
+	.sanskritLinkGood {
+		margin: 0;
+	}
+
+	.sanskritLinkGood {
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media (min-width: 981px) {
+	.snippet {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-column-gap: 2.25rem;
+	}
+
+	.snippetDesc,
+	.sanskritText {
+		margin: 0;
+	}
+
+	.snippetHeader {
+		font-size: 2rem;
+		line-height: 50px;
+	}
+
+	.sanskritText,
+	.sanskritWordTranslation {
+		line-height: 23px;
+	}
+
+	.sanskritWordTranslationHeader {
+		margin: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.snippet {
+		grid-column-gap: 5.8rem;
+		padding: 0;
+		margin-bottom: 8.3rem;
+	}
+
+	.snippetDesc {
+		font-size: 1.2rem;
+	}
+
+	.sanskritText {
+		line-height: 35px;
+		font-size: 1.2rem;
+	}
+
+	.sanskritWordTranslation {
+		padding-left: 2.4rem;
+	}
 }

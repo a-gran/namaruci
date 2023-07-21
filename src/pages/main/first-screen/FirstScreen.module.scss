@@ -1,3 +1,8 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 .transition {
 	transition: all 0.5s;
 }
@@ -116,37 +121,36 @@
 
 
 
-@media (min-width: 376px) and (max-width: 767px) {
+@media (min-width: 360px) and (max-width: 767px) {
 	.heading {
-		font-size: 2.2rem;
+		font-size: 2rem;
 	}
 
 	.greatSong {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 	}
 
 	.freedom {
-		font-size: 1.5rem;
-	}
-
-	.fotoDescWrap {
-		top: 800px;
+		font-size: 1.3rem;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
 	.fotoDesc {
-		top: 11rem;
-	}
-
-	.fotoDescWrap {
-		top: 900px;
+		top: 10rem;
+		left: 0;
+		right: 0;
+		margin: auto;
 	}
 }
 
 @media (min-width: 981px) and (max-width: 1199px) {
 	.firstScreenHeader {
-		margin-bottom: 90%;
+		margin-bottom: 73%;
+	}
+
+	.textDescCenter {
+		padding: 2rem;
 	}
 
 	.fotoDescWrap {
@@ -165,6 +169,7 @@
 
 	.freedom {
 		font-size: 2.4rem;
+		margin-bottom: 2rem;
 	}
 
 	.descHeader,
@@ -185,7 +190,7 @@
 	}
 
 	.firstScreenHeader {
-		margin-bottom: 40%;
+		margin-bottom: 10%;
 	}
 
 	.fotoDescWrap {
@@ -198,6 +203,10 @@
 		width: 791px;
 		top: -50px;
 		right: 100px;
+	}
+
+	.textDescWrap {
+		margin-bottom: 3rem;
 	}
 
 	.freedom {

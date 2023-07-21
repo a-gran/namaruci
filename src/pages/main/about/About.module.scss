@@ -1,15 +1,23 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 .aboutUsHeader {
-    color: #2B1EDD;
-    font-size: 2rem;
-    font-family: 'MuseoBolder';
-    text-transform: uppercase;
-    margin-top: 8rem;
-    margin-bottom: 1.2rem;
+	color: #2B1EDD;
+	font-size: 1.8rem;
+	font-family: 'MuseoBolder';
+	text-transform: uppercase;
+	margin-bottom: 1.2rem;
+	padding: 0 2rem;
 }
 
 .aboutUsDesc {
-    font-family: 'MuseoBold';
-    margin-bottom: 5rem;
+	font-family: 'MuseoBold';
+	margin-bottom: 5.25rem;
+	padding: 0 2rem;
+	font-size: 0.9rem;
+	line-height: 26px;
 }
 
 
@@ -19,10 +27,15 @@
 
 
 
-@media (min-width: 376px) and (max-width: 767px) {}
+@media (min-width: 981px) {
+	.aboutUsHeader {
+		font-size: 2rem;
+		padding: 0;
+	}
 
-@media (min-width: 768px) and (max-width: 980px) {}
-
-@media (min-width: 981px) and (max-width: 1199px) {}
-
-@media (min-width: 1200px) {}
+	.aboutUsDesc {
+		font-size: 1rem;
+		line-height: 35px;
+		padding: 0;
+	}
+}

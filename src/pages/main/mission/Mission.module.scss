@@ -1,7 +1,12 @@
 .missionBg {
 	background-color: #F8F8F8;
 	width: 100%;
-	margin-bottom: 5.5rem;
+	margin-bottom: 2.5rem;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .mission {
@@ -11,13 +16,13 @@
 }
 
 .missionText {
-	font-size: 1.2rem;
+	font-size: 0.9rem;
+	padding: 2rem 2rem 3rem 2rem;
 }
 
 .missionDesc {
-	font-size: 0.9rem;
 	align-items: center;
-	padding: 2rem;
+	margin-bottom: 1.8rem;
 }
 
 .missionTextDesc {
@@ -25,12 +30,11 @@
 }
 
 .missionSignature {
-	font-size: 0.7rem;
-	width: 12rem;
+	font-size: 0.75rem;
+	width: 11rem;
 	font-family: 'MuseoItalicNormal';
 	text-align: right;
 	margin-left: auto;
-	padding-right: 2rem;
 }
 
 .missionImg {
@@ -62,12 +66,20 @@
 
 
 
+
 @media (min-width: 768px) {
 	.mission {
 		flex-direction: row;
 	}
 }
 
-//@media (min-width: 981px) and (max-width: 1199px) {}
+@media (min-width: 1200px) {
+	.missionText {
+		padding: 0 4rem 0 0;
+		font-size: 1.2rem;
+	}
 
-//@media (min-width: 1200px) {}
+	.missionDesc {
+		margin-bottom: 4rem;
+	}
+}

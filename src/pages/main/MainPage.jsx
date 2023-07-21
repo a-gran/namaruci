@@ -20,8 +20,8 @@ const MainPage = () => {
 			{/*<Header />*/}
 			<FirstScreen />
 			<Mission />
-			{/*<SnippetSlider />*/}
-			{/*<About />*/}
+			<SnippetSlider />
+			<About />
 			{/*<BookSlider />*/}
 			{/*<BookSets />*/}
 			{/*<Video />*/}

@@ -3,7 +3,7 @@ import css from './FirstScreen.module.scss'
 
 const FirstScreen = () => {
 	return (
-		<div className={css.firstScreen}>
+		<div className={`${css.container} ${css.firstScreen}`}>
 			<img
 				className={css.fotoDesc}
 				src="img/foto-Prabhupada-mobile.png"
