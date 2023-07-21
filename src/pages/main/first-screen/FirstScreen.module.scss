@@ -9,13 +9,13 @@
 }
 
 .firstScreen {
-	padding: 0 1rem;
 	position: relative;
 	justify-content: space-between;
 }
 
 .firstScreenHeader {
 	align-items: center;
+	margin-bottom: 100%;
 }
 
 .heading,
@@ -65,6 +65,7 @@
 	justify-content: space-between;
 	flex-direction: column;
 	z-index: 99;
+	position: relative;
 }
 
 .textDescCenter {
@@ -86,7 +87,7 @@
 	width: 100%;
 	max-width: 791px;
 	position: absolute;
-	top: 7rem;
+	top: 5rem;
 }
 
 .aboutAuthor {
@@ -100,12 +101,13 @@
 .aboutAuthorHeader {
 	display: flex;
 	align-content: center;
-
+	padding-right: 2rem;
 }
 
 .aboutAuthorHeader::after {
 	content: url('img/arrow-right.png');
 	padding-left: 12px;
+
 }
 
 
@@ -125,6 +127,30 @@
 
 	.freedom {
 		font-size: 1.5rem;
+	}
+
+	.fotoDescWrap {
+		top: 800px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	.fotoDesc {
+		top: 11rem;
+	}
+
+	.fotoDescWrap {
+		top: 900px;
+	}
+}
+
+@media (min-width: 981px) and (max-width: 1199px) {
+	.firstScreenHeader {
+		margin-bottom: 90%;
+	}
+
+	.fotoDescWrap {
+		margin-bottom: 2rem;
 	}
 }
 
@@ -147,22 +173,35 @@
 	}
 }
 
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
 	.firstScreen {
 		flex-direction: row;
 		align-items: center;
+	}
+
+	.firstScreenHeaderWrap {
+		justify-content: start;
+		height: 689px;
+	}
+
+	.firstScreenHeader {
+		margin-bottom: 40%;
+	}
+
+	.fotoDescWrap {
+		margin-bottom: 2rem;
 	}
 
 	.fotoDesc {
 		position: relative;
 		height: 100%;
 		width: 791px;
-		top: 0;
+		top: -50px;
 		right: 100px;
 	}
 
 	.freedom {
-		margin-bottom: 3rem;
+		margin-bottom: 4rem;
 	}
 
 	.heading,

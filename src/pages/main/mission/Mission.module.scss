@@ -1,55 +1,59 @@
 .missionBg {
-    background-color: #F8F8F8;
-    width: 100%;
-    margin-bottom: 5.5rem;
+	background-color: #F8F8F8;
+	width: 100%;
+	margin-bottom: 5.5rem;
 }
 
 .mission {
-    display: flex;
-    align-items: center;
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
 }
 
 .missionText {
-    font-size: 1.2rem;
-    padding-right: 4rem;
+	font-size: 1.2rem;
 }
 
 .missionDesc {
-    margin-bottom: 3.75rem;
+	font-size: 0.9rem;
+	align-items: center;
+	padding: 2rem;
 }
 
 .missionTextDesc {
-    font-family: 'MuseoBolder';
+	font-family: 'MuseoBolder';
 }
 
 .missionSignature {
-    font-size: 1rem;
-    width: 12rem;
-    font-family: 'MuseoItalicNormal';
-    text-align: right;
-    margin-left: auto;
+	font-size: 0.7rem;
+	width: 12rem;
+	font-family: 'MuseoItalicNormal';
+	text-align: right;
+	margin-left: auto;
+	padding-right: 2rem;
 }
 
 .missionImg {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
 .missionImgHeader {
-    height: 232px;
-    background-color: #3B3B3B;
-    color: #fff;
-    font-family: 'MuseoBolder';
-    font-size: 2rem;
-    text-transform: uppercase;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+	height: 232px;
+	background-color: #3B3B3B;
+	color: #fff;
+	font-family: 'MuseoBolder';
+	text-transform: uppercase;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
 
 }
 
 .missionImgText {
-    padding: 0 2rem;
+	padding: 0 2rem;
+	font-size: 1.8rem;
 }
 
 
@@ -58,10 +62,12 @@
 
 
 
-@media (min-width: 376px) and (max-width: 767px) {}
+@media (min-width: 768px) {
+	.mission {
+		flex-direction: row;
+	}
+}
 
-@media (min-width: 768px) and (max-width: 980px) {}
+//@media (min-width: 981px) and (max-width: 1199px) {}
 
-@media (min-width: 981px) and (max-width: 1199px) {}
-
-@media (min-width: 1200px) {}
+//@media (min-width: 1200px) {}

@@ -1,62 +1,62 @@
 :root {
-    font-family: 'MuseoNormal';
-    line-height: 1.5;
-    font-weight: 400;
-    color: #3B3B3B;
+	font-family: 'MuseoNormal';
+	line-height: 1.5;
+	font-weight: 400;
+	color: #3B3B3B;
 
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
 }
 
 html {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 @font-face {
-    font-family: 'MuseoNormal';
-    src: url(./fonts/museosanscyrl-500.ttf);
+	font-family: 'MuseoNormal';
+	src: url(./fonts/museosanscyrl-500.ttf);
 }
 
 @font-face {
-    font-family: 'MuseoBold';
-    src: url(./fonts/museosanscyrl-700.ttf);
+	font-family: 'MuseoBold';
+	src: url(./fonts/museosanscyrl-700.ttf);
 }
 
 @font-face {
-    font-family: 'MuseoBolder';
-    src: url(./fonts/museosanscyrl-900.ttf);
+	font-family: 'MuseoBolder';
+	src: url(./fonts/museosanscyrl-900.ttf);
 }
 
 @font-face {
-    font-family: 'MuseoItalicNormal';
-    src: url(./fonts/museosanscyrl-500italic.ttf);
+	font-family: 'MuseoItalicNormal';
+	src: url(./fonts/museosanscyrl-500italic.ttf);
 }
 
 @font-face {
-    font-family: 'MuseoItalicBold';
-    src: url(./fonts/museosanscyrl-700italic.ttf);
+	font-family: 'MuseoItalicBold';
+	src: url(./fonts/museosanscyrl-700italic.ttf);
 }
 
 @font-face {
-    font-family: 'MuseoItalicBolder';
-    src: url(./fonts/museosanscyrl-900italic.ttf);
+	font-family: 'MuseoItalicBolder';
+	src: url(./fonts/museosanscyrl-900italic.ttf);
 }
 
 @font-face {
-    font-family: 'FreeSansOblique';
-    src: url(./fonts/FreeSansOblique.ttf);
+	font-family: 'FreeSansOblique';
+	src: url(./fonts/FreeSansOblique.ttf);
 }
 
 

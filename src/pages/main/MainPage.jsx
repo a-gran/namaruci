@@ -17,9 +17,9 @@ import Footer from '../../components/footer/Footer'
 const MainPage = () => {
 	return (
 		<div className={css.mainPage}>
-			<Header />
+			{/*<Header />*/}
 			<FirstScreen />
-			{/*<Mission />*/}
+			<Mission />
 			{/*<SnippetSlider />*/}
 			{/*<About />*/}
 			{/*<BookSlider />*/}
