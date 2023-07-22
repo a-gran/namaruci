@@ -30,12 +30,18 @@
 @media (min-width: 981px) {
 	.aboutUsHeader {
 		font-size: 2rem;
-		padding: 0;
 	}
 
 	.aboutUsDesc {
 		font-size: 1rem;
 		line-height: 35px;
+	}
+}
+
+@media (min-width: 1199px) {
+
+	.aboutUsHeader,
+	.aboutUsDesc {
 		padding: 0;
 	}
 }

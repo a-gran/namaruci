@@ -22,7 +22,7 @@ const MainPage = () => {
 			<Mission />
 			<SnippetSlider />
 			<About />
-			{/*<BookSlider />*/}
+			<BookSlider />
 			{/*<BookSets />*/}
 			{/*<Video />*/}
 			{/*<Lectures />*/}
