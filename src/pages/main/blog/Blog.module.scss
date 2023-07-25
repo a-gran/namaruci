@@ -1,144 +1,152 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 5.5rem;
+	display: flex;
+	flex-direction: column;
+}
+
 .blogHeader {
-    color: #2B1EDD;
-    font-size: 2rem;
-    font-family: 'MuseoBolder';
-    text-transform: uppercase;
-    margin-top: 8rem;
-    margin-bottom: 1.2rem;
+	color: #2B1EDD;
+	font-size: 2rem;
+	font-family: 'MuseoBolder';
+	text-transform: uppercase;
+	margin-bottom: 1.2rem;
+	padding: 0 2rem;
 }
 
 .blogCards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: #fff;
-    column-gap: 2.5rem;
-    margin-bottom: 3.25rem;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	margin-bottom: 3.25rem;
 }
 
 .blogCard {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #E8E8E8;
-    box-shadow: 5px 5px 5px 2px #E8E8E8;
-    border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #E8E8E8;
+	box-shadow: 5px 5px 5px 2px #E8E8E8;
+	border-radius: 5px;
 }
 
 .blogDesc {
-    padding: 1.8rem 1.2rem 1.2rem;
+	padding: 1.8rem 1.2rem 1.2rem;
 }
 
 .blogDescHeader {
-    margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .blogGrade {
-    display: flex;
-    font-size: 0.6rem;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	font-size: 0.6rem;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .gradeViewsLikes {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 .gradeComments,
 .gradeViewsLikes {
-    width: 50%;
+	width: 50%;
 }
 
 .gradeViews {
-    padding-right: 1.5rem;
+	padding-right: 1.5rem;
 }
 
 .gradeLikes {
-    position: relative;
-    bottom: 5px;
+	position: relative;
+	bottom: 5px;
 }
 
 .gradeComments::before,
 .gradeViews::before,
 .gradeLikes::before {
-    margin-right: 10px;
-    position: relative;
+	margin-right: 10px;
+	position: relative;
 }
 
 .gradeComments::before {
-    content: url('../../../public/img/blog/icons/comment.png');
-    top: 5px;
+	content: url('/icons/comment.png');
+	top: 5px;
 }
 
 .gradeViews::before {
-    content: url('../../../public/img/blog/icons/views.png');
-    top: 3px;
+	content: url('/icons/views.png');
+	top: 3px;
 }
 
 .gradeLikes::before {
-    content: url('../../../public/img/blog/icons/like.png');
-    top: 7px;
+	content: url('/icons/like.png');
+	top: 7px;
 }
 
 .blogPagination {
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    max-width: 360px;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-    justify-items: center;
-    margin-bottom: 3rem;
+	display: grid;
+	grid-template-columns: 15% 70% 15%;
+	width: 360px;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+	justify-items: center;
+	margin-bottom: 3rem;
 }
 
 .blogPages {
-    display: flex;
+	display: flex;
+	width: 100%;
 }
 
 .blogPage {
-    width: 30px;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 30px;
+	height: 34px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .blogArrow:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .blogPage:not(:last-child) {
-    margin-right: 2px;
+	margin-right: 2px;
 }
 
 .blogPage:hover {
-    border: 1px solid #E2E2E2;
-    border-radius: 4px;
-    cursor: pointer;
+	border: 1px solid #E2E2E2;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 .pageFocus {
-    background-color: #4034E0;
-    border-radius: 4px;
-    color: #FFFFFF;
+	background-color: #4034E0;
+	border-radius: 4px;
+	color: #FFFFFF;
 }
 
 .blogBtnBlock {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 4rem;
 }
 
 .blogBtnLink {
-    line-height: 1.2;
-    font-size: 0.6rem;
-    font-family: 'MuseoBold';
-    padding: 0.75rem 2rem;
-    color: #2C2C2C;
-    background-color: #EBEBEB;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration: none;
+	line-height: 1.2;
+	font-size: 0.75rem;
+	font-family: 'MuseoBold';
+	padding: 0.75rem 2rem;
+	color: #2C2C2C;
+	background-color: #EBEBEB;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
 }
 
 
@@ -147,10 +155,37 @@
 
 
 
-@media (min-width: 376px) and (max-width: 767px) {}
+@media (max-width: 767px) {
 
-@media (min-width: 768px) and (max-width: 980px) {}
+	.cardCol2,
+	.cardCol3 {
+		display: none;
+	}
+}
 
-@media (min-width: 981px) and (max-width: 1199px) {}
+@media (min-width: 768px) and (max-width: 1199px) {
+	.cardCol3 {
+		display: none;
+	}
 
-@media (min-width: 1200px) {}
+	.blogCards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		background-color: #fff;
+		column-gap: 2.5rem;
+		margin-bottom: 3.25rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.blogCards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		background-color: #fff;
+		column-gap: 2.5rem;
+	}
+
+	.blogHeader {
+		padding: 0;
+	}
+}

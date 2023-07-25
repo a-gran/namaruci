@@ -1,78 +1,152 @@
 .bookSets {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 7rem;
-    max-width: 1920px;
-    background-color: #F8F8F8;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 3rem;
+	max-width: 1920px;
 }
 
-.bookSetsItem {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.bookSetsItem1,
+.bookSetsItem2 {
+	display: flex;
+	flex-direction: column;
+	background-color: #F8F8F8;
 }
 
 .setFoto {
-    width: 100%;
+	width: 100%;
 }
 
 .setDesc {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 3rem 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 2rem;
 }
 
 .setHeader {
-    font-family: 'MuseoBolder';
-    font-size: 2rem;
-    margin: 0;
-    line-height: 1.3;
-    text-transform: uppercase;
+	font-family: 'MuseoBolder';
+	font-size: 1.2rem;
+	margin: 1.8rem 0 1.2rem 0;
+	text-transform: uppercase;
 }
 
 .setSnippet {
-    max-width: 434px;
+	font-size: 0.9rem;
 }
 
 .setBtnBlock {
-    display: flex;
-    align-items: center;
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 .setPrice {
-    padding-left: 2rem;
-    font-family: 'MuseoBold';
-    font-size: 1.8rem;
+	font-family: 'MuseoBold';
+	font-size: 1.8rem;
+	margin: 1.2rem 0 1.5rem 0;
 }
 
 .right {
-    align-items: flex-end;
-    text-align: right;
+	display: flex;
 }
 
 .mr {
-    margin-right: 2rem;
+	margin-right: 2rem;
 }
 
-.setBtnLink,
-.allSets {
-    line-height: 1.2;
-    font-size: 0.6rem;
-    font-family: 'MuseoBold';
-    padding: 0.75rem 2rem;
-    color: #2C2C2C;
-    background-color: #EBEBEB;
+.setBtnLink {
+	line-height: 1.2;
+	font-size: 0.75rem;
+	font-family: 'MuseoBold';
+	padding: 0.75rem 2rem;
+	color: #2C2C2C;
+	background-color: #EBEBEB;
+	text-align: center;
+	margin-bottom: 3rem;
 }
 
 .allSets {
-    margin-top: 4rem;
-    margin-right: auto;
-    margin-left: auto;
-    line-height: 1.2;
-    font-size: 0.6rem;
-    font-family: 'MuseoBold';
-    padding: 0.75rem 6rem;
-    color: #fff;
-    background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
-    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
+	line-height: 24px;
+	font-size: 0.75rem;
+	font-family: 'MuseoBold';
+	margin: 0 2rem;
+	padding: 0.7rem;
+	color: #fff;
+	background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
+	box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
+	text-align: center;
+}
+
+@media (min-width: 981px) {
+
+	.bookSetsItem1,
+	.bookSetsItem2 {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.setFoto {
+		width: 50%;
+		font-size: 16px;
+	}
+
+	.setDesc {
+		justify-content: space-evenly;
+	}
+
+	.setBtnBlock {
+		flex-direction: row;
+	}
+
+	.setPrice {
+		margin: 0;
+	}
+
+	.setHeader {
+		margin: 0;
+	}
+
+	.setBtnLink {
+		margin: 0 1.2rem 0 0;
+	}
+
+	.bookSetsItem2 {
+		margin-bottom: 4rem;
+		flex-direction: row-reverse;
+	}
+
+	.allSets {
+		margin: 0 auto;
+		width: 466px;
+	}
+
+	.right {
+		align-items: flex-end;
+		text-align: right;
+	}
+
+	.rev {
+		flex-direction: row-reverse;
+	}
+
+	.btnRight {
+		margin-right: 0;
+		margin-left: 1.2rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.setSnippet {
+		width: 75%;
+		font-size: 1rem;
+	}
+
+	.setHeader {
+		font-size: 1.8rem;
+	}
+}
+
+@media (min-width: 1720px) {
+	.setSnippet {
+		width: 50%;
+	}
 }

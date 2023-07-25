@@ -1,6 +1,5 @@
 import css from './Main.module.scss'
 import React from 'react'
-import Header from '../../components/header/Header'
 import FirstScreen from './first-screen/FirstScreen'
 import Mission from './mission/Mission'
 import SnippetSlider from './snippetSlider/SnippetSlider'
@@ -12,7 +11,6 @@ import Lectures from './lectures/Lectures'
 import Blog from './blog/Blog'
 import Socials from './socials/Socials'
 import Team from './team/Team'
-import Footer from '../../components/footer/Footer'
 
 const MainPage = () => {
 	return (
@@ -23,10 +21,10 @@ const MainPage = () => {
 			<SnippetSlider />
 			<About />
 			<BookSlider />
-			{/*<BookSets />*/}
+			<BookSets />
 			{/*<Video />*/}
 			{/*<Lectures />*/}
-			{/*<Blog />*/}
+			<Blog />
 			{/*<Socials />*/}
 			{/*<Team />*/}
 			{/*<Footer />*/}

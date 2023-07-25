@@ -1,10 +1,11 @@
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	margin-bottom: 3rem;
+	margin-bottom: 5.5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 }
 
 .bookSlider {
@@ -55,10 +56,11 @@
 }
 
 .bookSliderBtn {
-	line-height: 24px;
 	font-size: 0.75rem;
 	font-family: 'MuseoBold';
-	padding: 0.75rem 2rem;
+	width: 222px;
+	height: 48px;
+	padding: 0.6rem;
 	text-align: center;
 	color: #fff;
 	background: linear-gradient(82.09deg, #E122F9 -1.27%, #2B1EDD 69.03%);
@@ -86,6 +88,7 @@
 
 .bookAnnouncementText {
 	margin-bottom: 1.2rem;
+	margin-top: 3rem;
 }
 
 .sliderSignature {
@@ -133,27 +136,38 @@
 @media (min-width: 981px) {
 	.bookSlider {
 		flex-direction: row;
+		order: 1;
 	}
 
 	.container {
 		align-items: stretch;
 	}
 
-	.bookSlider,
-	.bookAnnouncement {
-		padding: 0;
-	}
-
 	.bookSliderWrap {
 		width: 50%;
+		margin: 0;
+	}
+
+	.bookSliderBottom {
+		margin: 0 0 0 2rem;
+		position: relative;
+		bottom: 16px;
 	}
 
 	.bookSliderBookDesc {
 		width: 50%;
 	}
 
-	.bookSlider {
-		order: 1;
+	.bookSliderBtnBlock {
+		flex-direction: row;
+	}
+
+	.bookSliderBtn {
+		margin-right: 1.2rem;
+	}
+
+	.bookSliderPrice {
+		margin: 0;
 	}
 
 	.bookAnnouncement {
@@ -164,5 +178,22 @@
 	.bookSliderBottom {
 		padding: 0;
 		order: 3;
+	}
+
+	.sliderSignature {
+		width: 280px;
+		padding-top: 1rem;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.bookSlider,
+	.bookAnnouncement {
+		padding: 0;
+	}
+
+	.bookSliderBottom {
+		margin: 0;
 	}
 }
