@@ -26,7 +26,7 @@ const MainPage = () => {
 			{/*<Lectures />*/}
 			<Blog />
 			{/*<Socials />*/}
-			{/*<Team />*/}
+			<Team />
 			{/*<Footer />*/}
 		</div>
 	)

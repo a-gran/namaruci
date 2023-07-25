@@ -1,9 +1,9 @@
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	margin-bottom: 5.5rem;
 	display: flex;
 	flex-direction: column;
+	padding: 0 2rem;
 }
 
 .blogHeader {
@@ -12,7 +12,6 @@
 	font-family: 'MuseoBolder';
 	text-transform: uppercase;
 	margin-bottom: 1.2rem;
-	padding: 0 2rem;
 }
 
 .blogCards {
@@ -90,7 +89,7 @@
 .blogPagination {
 	display: grid;
 	grid-template-columns: 15% 70% 15%;
-	width: 360px;
+	width: 280px;
 	align-items: center;
 	margin-right: auto;
 	margin-left: auto;
@@ -163,7 +162,7 @@
 	}
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 980px) and (max-width: 1199px) {
 	.cardCol3 {
 		display: none;
 	}
@@ -186,6 +185,10 @@
 	}
 
 	.blogHeader {
+		padding: 0;
+	}
+
+	.container {
 		padding: 0;
 	}
 }

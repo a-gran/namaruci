@@ -75,7 +75,6 @@ const Blog = () => {
 					<div className={css.blogPage}>2</div>
 					<div className={`${css.blogPage} ${css.pageFocus}`}>3</div>
 					<div className={css.blogPage}>4</div>
-					<div className={css.blogPage}>5</div>
 					<div className={css.blogPage}>...</div>
 					<div className={css.blogPage}>19</div>
 				</div>
