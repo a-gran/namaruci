@@ -26,13 +26,16 @@
 }
 
 .missionTextDesc {
-	font-family: 'MuseoBolder';
+	font-family: 'Museo';
+	font-weight: 900;
 }
 
 .missionSignature {
 	font-size: 0.75rem;
 	width: 11rem;
-	font-family: 'MuseoItalicNormal';
+	font-family: 'Museo';
+	font-weight: 500;
+	font-style: italic;
 	text-align: right;
 	margin-left: auto;
 }
@@ -47,7 +50,8 @@
 	height: 232px;
 	background-color: #3B3B3B;
 	color: #fff;
-	font-family: 'MuseoBolder';
+	font-family: 'Museo';
+	font-weight: 900;
 	text-transform: uppercase;
 	display: flex;
 	flex-wrap: nowrap;

@@ -27,7 +27,8 @@
 .greatSong,
 .freedom {
 	text-transform: uppercase;
-	font-family: 'MuseoBolder';
+	font-family: 'Museo';
+	font-weight: 900;
 }
 
 .greatSong,
@@ -79,7 +80,8 @@
 }
 
 .descHeader {
-	font-family: 'MuseoBold';
+	font-family: 'Museo';
+	font-weight: 700;
 }
 
 .descHeader,
@@ -112,7 +114,6 @@
 .aboutAuthorHeader::after {
 	content: url('img/arrow-right.png');
 	padding-left: 12px;
-
 }
 
 

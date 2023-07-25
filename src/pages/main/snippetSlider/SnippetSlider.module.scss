@@ -19,7 +19,8 @@
 .snippetHeader {
 	color: #2B1EDD;
 	font-size: 1.8rem;
-	font-family: 'MuseoBolder';
+	font-family: 'Museo';
+	font-weight: 900;
 	text-transform: uppercase;
 	margin: 0;
 	line-height: 46px;
@@ -44,6 +45,8 @@
 
 .sanskritText {
 	font-family: 'FreeSansOblique';
+	font-weight: 500;
+	font-style: oblique;
 	font-size: 0.75rem;
 	margin-bottom: 1rem;
 	line-height: 26px;
@@ -83,7 +86,8 @@
 .nextLinkGood {
 	background-color: #EBEBEB;
 	color: #2C2C2C;
-	font-family: 'MuseoBold';
+	font-family: 'Museo';
+	font-weight: 700;
 	display: flex;
 	justify-content: space-evenly;
 	padding: 0.5rem;

@@ -25,38 +25,52 @@ html {
 }
 
 @font-face {
-	font-family: 'MuseoNormal';
+	font-family: 'Museo';
 	src: url(./fonts/museosanscyrl-500.ttf);
+	font-weight: 500;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'MuseoBold';
+	font-family: 'Museo';
 	src: url(./fonts/museosanscyrl-700.ttf);
+	font-weight: 700;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'MuseoBolder';
+	font-family: 'Museo';
 	src: url(./fonts/museosanscyrl-900.ttf);
+	font-weight: 900;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'MuseoItalicNormal';
+	font-family: 'Museo';
 	src: url(./fonts/museosanscyrl-500italic.ttf);
+	font-weight: 500;
+	font-style: italic;
 }
 
 @font-face {
-	font-family: 'MuseoItalicBold';
+	font-family: 'Museo';
 	src: url(./fonts/museosanscyrl-700italic.ttf);
+	font-weight: 700;
+	font-style: italic;
 }
 
 @font-face {
-	font-family: 'MuseoItalicBolder';
+	font-family: 'Museo';
 	src: url(./fonts/museosanscyrl-900italic.ttf);
+	font-weight: 900;
+	font-style: italic;
 }
 
 @font-face {
 	font-family: 'FreeSansOblique';
 	src: url(./fonts/FreeSansOblique.ttf);
+	font-weight: 500;
+	font-style: oblique;
 }
 
 

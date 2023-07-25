@@ -1,35 +1,36 @@
 .socialHeader {
-    color: #2B1EDD;
-    font-size: 2rem;
-    font-family: 'MuseoBolder';
-    text-transform: uppercase;
-    margin-bottom: 1.2rem;
-    text-align: center;
+	color: #2B1EDD;
+	font-size: 2rem;
+	font-family: 'Museo';
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 1.2rem;
+	text-align: center;
 }
 
 .socialWrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 660px;
-    width: 840px;
-    background-color: #ccc;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 660px;
+	width: 840px;
+	background-color: #ccc;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3rem;
 }
 
 .socialBlock {
-    width: 85%;
-    height: 85%;
-    background-color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 85%;
+	height: 85%;
+	background-color: #eee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .socialBlockItem {
-    font-size: 2rem;
+	font-size: 2rem;
 }
 
 
